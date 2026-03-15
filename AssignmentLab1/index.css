@@ -1,0 +1,107 @@
+.reason-list {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.reason-item {
+    flex: 1;
+    text-align: center;
+    background: #51c987;
+    background: linear-gradient(137deg,rgba(81, 201, 135, 1) 0%, rgba(30, 156, 150, 1) 100%);
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.reason-item img {
+    width: 40px;
+    height: 40px;
+}
+
+.popular-destinations-container-child {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.destination-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    height: 200px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    overflow: hidden;
+    transition: transform 0.15s ease;
+    will-change: transform;
+}
+
+.destination-container:hover {
+    transform: scale(1.075);
+}
+
+.destination-container:hover::after{
+    opacity: 0;
+}
+
+.destination-container::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #000000;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 25%, rgba(0, 0, 0, 0.74) 100%);
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.destination-container h2 {
+    margin: 0px;
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.destination-container img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    object-fit: cover;
+    z-index: 0;
+}
+
+button {
+    font-size: 20px;
+    border-radius: 10px;
+    height: 40px;
+    border: 0px;
+    background-color: rgb(36, 165, 103);
+    color: white;
+    text-align: center;
+    transition: transform 0.15s ease;
+    will-change: transform;
+    display: block;
+    margin: 0;
+    padding: 0px 30px;
+}
+
+button:hover {
+    transform: scale(1.025);
+    font-weight: 600;
+    color: rgb(26, 59, 94);
+    background: #51c987;
+    background: linear-gradient(137deg,rgba(81, 201, 135, 1) 0%, rgba(30, 156, 150, 1) 100%);
+}
+
+.destination-link {
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+}

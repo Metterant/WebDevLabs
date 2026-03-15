@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logos/yourtravel_icon_small.png" />
+    <link rel="stylesheet" type="text/css" href="main_styles.css" />
+    <link rel="stylesheet" type="text/css" href="send_feedback.css">
+    <title>Send Feedback</title>
+  </head>
+  <body>
+    <header class="s-topbar">
+      <div class="s-topbar-container">
+        <a href="index.html" title="YourTravel">
+          <img src="images/logos/yourtravel_logo.png" class="s-topbar-logo" />
+        </a>
+        <div class="s-topbar-nav-container">
+          <ul>
+            <li>
+              <a href="destinations.html">Destinations</a>
+            </li>
+            <li>
+              <a href="itineraries.html">Itineraries</a>
+            </li>
+            <li>
+              <a href="reviews.html">Reviews</a>
+            </li>
+            <li>
+              <a href="gallery.html">Gallery</a>
+            </li>
+            <li>
+              <a href="send_feedback.html">Feedback</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main-content">
+      <section class="contact-form">
+        <h2>Send us your Feedback</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <!-- <legend>Customer Information</legend> -->
+
+            <label for="fullname">Full Name:</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              required
+            /><br /><br />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required /><br /><br />
+
+            <label for="phone">Phone:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{10}"
+              placeholder="0123456789"
+              required
+            /><br /><br />
+
+            <label for="feedback">Detailed Feedback:</label><br />
+            <textarea
+              id="feedback"
+              name="feedback"
+              rows="4"
+              cols="40"
+              placeholder="Write your feedback here..."
+            ></textarea
+            ><br /><br />
+
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer class="s-footer">
+      <div class="s-footer-container">
+        <p>&copy; 2026 YourTravel</p>
+      </div>
+    </footer>
+  </body>
+</html>

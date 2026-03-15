@@ -1,0 +1,47 @@
+.itineraries-section {
+    margin: 28px auto 40px;
+}
+
+.itineraries-section h1 {
+    margin-bottom: 8px;
+}
+
+.itineraries-section p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.itinerary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.itinerary-card {
+    background: white;
+    border: 1px solid rgba(128, 128, 128, 0.35);
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.itinerary-card h2 {
+    margin-top: 0;
+    margin-bottom: 6px;
+    color: #1a2c42;
+}
+
+.trip-meta {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e9c96;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.itinerary-card ul {
+    margin: 0;
+    padding-left: 20px;
+    line-height: 1.5;
+}
